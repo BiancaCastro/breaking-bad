@@ -1,0 +1,10 @@
+{
+    "title": "Welcome",
+    "status": "Status:",
+    "category":"Category:",
+    "as": "as",
+    "aka":"Also known as:",
+    "birthday":"Birthday",
+    "occupation":"Occupation",
+    "random_quote":"Generate new random quote"
+  }
