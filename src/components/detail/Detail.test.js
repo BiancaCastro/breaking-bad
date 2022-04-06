@@ -1,4 +1,4 @@
-import { render, screen, act, fireEvent } from "@testing-library/react";
+import { render, screen, act } from "@testing-library/react";
 import React from "react";
 import Detail from "./Detail";
 jest.useFakeTimers();
@@ -12,10 +12,10 @@ afterEach(() => {
 jest.mock("react-i18next", () => ({
   useTranslation: () => ({ t: (key) => key }),
 }));
-let fetchData;
+let fetchDetail;
 let fetchQuote;
 beforeEach(() => {
-  fetchData = jest.fn();
+    fetchDetail = jest.fn();
   fetchQuote = jest.fn();
 });
 describe("It should render detail component", () => {

@@ -33,7 +33,7 @@ const CharacterList = () => {
         <Spinner
           data-testid="spinner"
           animation="border"
-          style={{ display: "block", margin: "50% auto" }}
+          style={{ display: "block", margin: "20% auto" }}
         />
       ) : (
         <Row xs={1} md={4} className="g-4">

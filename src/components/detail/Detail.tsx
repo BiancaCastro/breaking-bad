@@ -64,7 +64,7 @@ const Detail = () => {
       <Spinner
         data-testid="spinner"
         animation="border"
-        style={{ display: "block", margin: "50% auto" }}
+        style={{ display: "block", margin: "20% auto" }}
       />
     );
   }
@@ -91,7 +91,9 @@ const Detail = () => {
             </Card.Text>
             <Card.Text>
               {t("occupation")}{" "}
-              {detail?.occupation?.map((occupation) => occupation)}
+              {detail?.occupation?.map((occupation) => (
+                <Card.Text>{occupation} </Card.Text>
+              ))}
             </Card.Text>
             <Button disabled={!quote} variant="primary" onClick={fetchQuote}>
               {t("random_quote")}
